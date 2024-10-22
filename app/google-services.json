@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243425861045",
+    "project_id": "prueba1-8e287",
+    "storage_bucket": "prueba1-8e287.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243425861045:android:74f6a2429c157386bccdfc",
+        "android_client_info": {
+          "package_name": "com.hectorcortes.authhector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243425861045-9dks9h5fe13hkkbdemc87b2ntdoobvq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB91qHvNePBtt5U1sktxlCFeNTaD6WRj6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243425861045-9dks9h5fe13hkkbdemc87b2ntdoobvq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
