@@ -3,6 +3,8 @@
     <style name="Base.Theme.AuthHector" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#FF51834B</item>
+
     </style>
 
     <style name="Theme.AuthHector" parent="Base.Theme.AuthHector" />

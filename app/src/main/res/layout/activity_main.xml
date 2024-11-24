@@ -5,13 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5C9356"
     android:contextClickable="false"
     tools:context=".MainActivity">
 
+
     <LinearLayout
+
         android:id="@+id/authLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="372dp"
+        android:layout_height="635dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -20,12 +23,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                app:srcCompat="@drawable/recetas" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/iniciosession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contextClickable="false"
+                android:elegantTextHeight="true"
+                android:freezesText="false"
+                android:gravity="center"
+                android:text="INICIO SESION"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textStyle="normal"
+                app:autoSizeTextType="none" />
+        </LinearLayout>
+
         <EditText
             android:id="@+id/EmailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
+            android:hint="Correo"
             android:inputType="textEmailAddress" />
 
         <Space
@@ -37,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Contrasena"
             android:inputType="textPassword" />
 
         <Space
@@ -54,7 +93,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Registrar" />
+                android:backgroundTint="#f8ebbe"
+                android:text="Registrar"
+                android:textColor="@color/black" />
 
             <Space
                 android:layout_width="8dp"
@@ -65,7 +106,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Acceder" />
+                android:backgroundTint="#f8ebbe"
+                android:text="Acceder"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
@@ -73,37 +116,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/googleButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@mipmap/googleicon1"
-            android:paddingStart="16dp"
-            android:scrollbarAlwaysDrawHorizontalTrack="false"
-            android:scrollbarAlwaysDrawVerticalTrack="false"
-            android:text="google"
-            android:textAlignment="textStart"
-            android:textAllCaps="true"
-            android:textColor="@color/black" />
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/googleButton"
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#32C8C7C7"
+                android:drawableLeft="@mipmap/google"
+                android:paddingStart="9dp"
 
-        <Button
-            android:id="@+id/facebooButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@mipmap/facebook"
-            android:paddingStart="16dp"
-            android:scrollbarAlwaysDrawHorizontalTrack="false"
-            android:scrollbarAlwaysDrawVerticalTrack="false"
-            android:text="Facebook"
-            android:textAlignment="textStart"
-            android:textAllCaps="true"
-            android:textColor="@color/black" />
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/facebooButton"
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#32C8C7C7"
+                android:drawableLeft="@mipmap/face"
+                android:paddingStart="9dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
 
 
     </LinearLayout>

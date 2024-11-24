@@ -2,6 +2,8 @@ package com.hectorcortes.authhector
 
 import android.content.Context
 import android.content.Intent // Corregido el import de Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -37,6 +39,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    // color actionbar de la barra
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FF51834B")))
+
 
         // Inicializar Firebase Analytics
         val analytics = FirebaseAnalytics.getInstance(this)

@@ -3,8 +3,6 @@
     <string name="prefs_file">com.hectorcortes.authhector.PREFERENCE_FILE_Key</string>
 
 
-
-
     <string name="facebook_app_id">27231443833165575</string>
     <string name="fb_login_protocol_scheme">fb27231443833165575</string>
     <string name="facebook_client_token">0fc32f85765a50a32b91bafab138f944</string>
