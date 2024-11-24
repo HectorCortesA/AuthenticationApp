@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AuthHector"
         tools:targetApi="31">
         <activity
-            android:name=".VerReceta"
+            android:name=".DetallePlatilloActivity"
             android:exported="false" />
         <activity
             android:name=".AgregarRecetaActivity"

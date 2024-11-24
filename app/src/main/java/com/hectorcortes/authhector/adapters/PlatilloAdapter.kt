@@ -1,5 +1,5 @@
 package com.hectorcortes.authhector
-
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.util.Base64
 import android.view.LayoutInflater
@@ -38,8 +38,21 @@ class PlatilloAdapter(
         }
 
         holder.buttonVerReceta.setOnClickListener {
-            onClick(platillo)
+            // Crear un Intent para abrir la nueva actividad
+            val context = holder.itemView.context
+            val intent = Intent(context, DetallePlatilloActivity::class.java).apply {
+                putExtra("nombre", nombre)
+                putExtra("descripcion", platillo.getString("descripcion") ?: "Descripción no disponible")
+                putExtra("ingredientes", platillo.getString("ingredientes") ?: "Ingredientes no disponibles")
+                putExtra("pasos", platillo.getString("pasos") ?: "Pasos no disponibles")
+                putExtra("imagenBase64", imagenBase64 ?: "")
+            }
+            context.startActivity(intent)
         }
+    }
+
+    private fun putExtra(s: String, nombre: String) {
+        TODO("Not yet implemented")
     }
 
     override fun getItemCount(): Int = platillosList.size
@@ -50,3 +63,4 @@ class PlatilloAdapter(
         val buttonVerReceta: Button = itemView.findViewById(R.id.buttonVerReceta)
     }
 }
+
