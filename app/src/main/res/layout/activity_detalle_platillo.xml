@@ -1,45 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#E9F5DB"
+    android:fillViewport="true">
 
-    <!-- Imagen del platillo -->
-    <ImageView
-        android:id="@+id/imageViewPlatilloDetalle"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop" />
-
-    <!-- Nombre del platillo -->
-    <TextView
-        android:id="@+id/textViewNombrePlatilloDetalle"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <!-- Descripción del platillo -->
-    <TextView
-        android:id="@+id/textViewDescripcionPlatilloDetalle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"/>
+        <!-- Imagen del platillo -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewPlatilloDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/radius" />
 
-    <!-- Ingredientes del platillo -->
-    <TextView
-        android:id="@+id/textViewIngredientesPlatilloDetalle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"/>
+        <!-- Nombre del platillo -->
+        <TextView
+            android:id="@+id/textViewNombrePlatilloDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
 
-    <!-- Pasos para la receta -->
-    <TextView
-        android:id="@+id/textViewPasosPlatilloDetalle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"/>
+        <!-- Descripción del platillo -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescripcionPlatilloDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textIngredientess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Ingredientes del platillo -->
+        <TextView
+            android:id="@+id/textViewIngredientesPlatilloDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Pasos para la receta -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textPasos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasos para la preparacion:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPasosPlatilloDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
